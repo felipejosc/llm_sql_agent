@@ -36,11 +36,11 @@ DB_PORT=5432
 Run:
 Streamlit run app.py
 =====================================
- Area       Technology
+ 
   
- Agent       LangChain Tools + Custom Logic     
- LLM         Qwen 32B (Groq API)                
- Backend     Python 3.10+                       
- DB          PostgreSQL                         
- UI          Streamlit                          
- Security   .gitignore + environment variables 
+ Agent:       LangChain Tools + Custom Logic     
+ LLM:        Qwen 32B (Groq API)                
+ Backend:     Python 3.10+                       
+ DB:        PostgreSQL                         
+ UI:          Streamlit                          
+ Security:   .gitignore + environment variables 
