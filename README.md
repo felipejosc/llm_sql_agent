@@ -1,46 +1,68 @@
 # llm_sql_agent
 
-AI-powered SQL exploration agent using PostgreSQL, LangChain Tools and Streamlit
+AI powered SQL exploration agent that translates natural language questions into PostgreSQL queries using LangChain, Groq and Streamlit.
+# AI SQL Exploration Agent
 
-**Project Structure:**
-- `agent_core/`
-  - `agent.py`
-  - `tools.py`
-  - `config.py`
-  - `log_utils.py`
-  - `__init__.py`
-- `app.py`
-- `requirements.txt`
-- `.gitignore`
-- `README.md`
+AI SQL Exploration Agent is a natural language interface for exploring PostgreSQL databases.
 
-**Running Locally:**
+The project allows users to ask business questions in plain English and receive structured SQL based answers through a Streamlit interface. It uses LangChain tools, custom agent logic and Groq's Qwen 32B model to interpret requests, generate queries and interact with the database safely.
+
+This project was built to make data exploration faster, more accessible and less dependent on manual SQL writing.
+
+## What it demonstrates
+
+Data engineering and backend development  
+Natural language to SQL workflows  
+PostgreSQL database integration  
+LLM powered agent design  
+Streamlit application development  
+Environment based configuration and credential protection  
+
+## Tech Stack
+
+Python 3.10  
+PostgreSQL  
+LangChain Tools  
+Groq API  
+Qwen 32B  
+Streamlit  
+
+## Running Locally
+
+## Running Locally
+
 Create a virtual environment:
-python -m venv venv
 
-Activate:
-(Windows) 
+```bash
+python -m venv venv
+```
+
+Activate the environment:
+
+```bash
 venv\Scripts\activate
+```
 
 Install dependencies:
+
+```bash
 pip install -r requirements.txt
+```
 
-Configure .env:
-GROQ_API_KEY=xxxx
-DB_NAME=xxxx
-DB_USER=xxxx
-DB_PASSWORD=xxxx
-DB_HOST=localhost
-DB_PORT=5432
+Run the app:
 
-Run:
-Streamlit run app.py
-=====================================
- 
-  
- Agent:       LangChain Tools + Custom Logic     
- LLM:        Qwen 32B (Groq API)                
- Backend:     Python 3.10+                       
- DB:        PostgreSQL                         
- UI:          Streamlit                          
- Security:   .gitignore + environment variables 
+```bash
+streamlit run app.py
+```
+
+## Tech Stack
+
+Python 3.10  
+PostgreSQL  
+LangChain  
+Groq API  
+Streamlit  
+
+## Security
+
+Credentials are managed with environment variables and protected with `.gitignore`.
